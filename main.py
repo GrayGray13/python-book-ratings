@@ -22,8 +22,6 @@ class Book(db.Model):
     author: Mapped[str] = mapped_column(String, nullable=False)
     rating: Mapped[float] = mapped_column(Float, nullable=False)
 
-    # def __repr__(self):
-    #     return f'<Book {self.title}>'
     def __init__(self, title, author, rating):
         self.title = title
         self.author = author
